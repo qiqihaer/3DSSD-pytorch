@@ -19,3 +19,15 @@ pip install -r requirements.txt
 cd lib/pointnet2
 python setup.py install
 ```
+
+4. Prepare data with according to the ``Data Preparation'' in the [3DSSD](https://github.com/Jia-Research-Lab/3DSSD)
+
+## Train a Model
+
+```
+python lib/core/trainer.py --cfg configs/kitti/3dssd/3dssd.yaml
+```
+
+The trainning log and tensorboard log are saved into output dir
+
+
