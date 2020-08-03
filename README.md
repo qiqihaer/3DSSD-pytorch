@@ -3,6 +3,13 @@
 
 This repository contains a PyTorch implementation of [3DSSD](https://github.com/Jia-Research-Lab/3DSSD) on the KITTI benchmark.
 
+There are several characteristics to make you easy to understand and modify the code:
+1. I keep the name of the folders. files and the fucntions the same as the [official code](https://github.com/Jia-Research-Lab/3DSSD) as much as possible. 
+2. The "Trainner" in the lib/core/trainner.py draws on the code style of the [PCDet](https://github.com/open-mmlab/OpenPCDet).
+3. I borrow the visualization code with the MeshLab form the [VoteNet](https://github.com/facebookresearch/votenet).
+
+If you want to use the F-FPS or the Dilated-Ball-Query, you can just use the files in lib/pointnet2.
+
 ## Preparation
 
 1. Clone this repository
@@ -20,7 +27,7 @@ cd lib/pointnet2
 python setup.py install
 ```
 
-4. Prepare data with according to the ``Data Preparation'' in the [3DSSD](https://github.com/Jia-Research-Lab/3DSSD)
+4. Prepare data with according to the "Data Preparation" in the [3DSSD](https://github.com/Jia-Research-Lab/3DSSD)
 
 ## Train a Model
 
